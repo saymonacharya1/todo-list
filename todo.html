@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="todo.css">
+</head>
+<body>
+
+    <h1>My Todo List</h1>
+    
+    <div class="container">
+
+       <form id='form1'> 
+            <span id="ib">
+                  
+                <input id="inputField" type="text" placeholder="Your Todo's..." >
+                <button id="add" type='submit'>Add</button>
+        
+            </span>
+        </form>
+
+        <div class="todos" id="todoContainer">
+
+          <ul></ul>
+     
+         </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.14.0/Sortable.min.js"></script>
+    <script src="todo.js"></script>
+</body>
+</html>
