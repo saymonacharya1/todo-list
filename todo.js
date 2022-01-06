@@ -58,10 +58,10 @@ function todoLocalStorage(todo) {
     todos = [];
   } else {
     todos = JSON.parse(localStorage.getItem("todos"));
-   
   }
-
+  
   todos.unshift(todo);
+  
   localStorage.setItem("todos", JSON.stringify(todos));
 }
 //
@@ -98,7 +98,7 @@ function getTodos() {
     });
 
     del.addEventListener("click", () => {
-        deleteLocalStorage(del);
+      deleteLocalStorage(del);
       todoContainer.removeChild(li);
     });
   });
@@ -112,13 +112,14 @@ function deleteLocalStorage(todo) {
   } else {
     todos = JSON.parse(localStorage.getItem("todos"));
   }
-  console.log(todo)
-  console.log(todo.children[0])
+  // console.log(todo)
+  // console.log(todo.children[0])
   const todoElement = todo.parentElement.innerText;
   console.log(todoElement)
   
   todos.splice(todos.indexOf(todoElement), 1);
   // console..log(todos)
   localStorage.setItem("todos", JSON.stringify(todos));
+  console.log(todos);
 }
 
